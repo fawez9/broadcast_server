@@ -21,7 +21,7 @@ public class ServerWebSocketHandler extends TextWebSocketHandler {
         System.out.println("New client connected : " + session.getId());
     }
 
-    // utomatically called whenever a connected client sends text to the server.
+    // Automatically called whenever a connected client sends text to the server.
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
         String payload = message.getPayload();
